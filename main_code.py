@@ -82,7 +82,7 @@ for row in rows:
     #exchange_tag = row.find('td')
     #exchange = exchange_tag.text.strip() if exchange_tag else ""
 
-    print(f"Date: {date}, Country: {country},Exchange: {exchange}, Event: {event}")
+    print(f"Date: {date}, Country: {country}, Exchange: {exchange}, Event: {event}")
 print(count, "total count")
 """
 for row in rows:
