@@ -36,13 +36,13 @@ def add_form_data(name: str, value: str) -> []:
 
 def construct_request(page: int = 0):
     data_list = []
-    #today_date = datetime.today().date()
-    #date_after_59_days = today_date + timedelta(days=59)
-    #date_after_91_days = today_date + timedelta(days=91)
-    date_after_59_days = '2024-07-30'
-    date_after_91_days = '2024-08-30'
+    today_date = datetime.today().date()
+    date_after_59_days = today_date + timedelta(days=59)
+    date_after_91_days = today_date + timedelta(days=91)
+    #date_after_59_days = '2024-07-30'
+    #date_after_91_days = '2024-08-30'
     
-    #print("Today's Date -- ", today_date)
+    print("Today's Date -- ", today_date)
     print("Day after 59 days -- ", date_after_59_days)
     print("Day after 91 days -- ", date_after_91_days)
     data_list.extend(add_form_data('dateFrom', str(date_after_59_days)))
